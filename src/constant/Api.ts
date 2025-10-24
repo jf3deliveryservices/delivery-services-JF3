@@ -1,6 +1,6 @@
 import axios, { type AxiosResponse } from "axios";
 
-const API_URL = "http://localhost:3000";
+const API_URL = "https://jf3-service-production.up.railway.app";
 
 //----------------- TYPES -----------------//
 
