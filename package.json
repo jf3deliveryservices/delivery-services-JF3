@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist -r https://github.com/jf3deliveryservices/delivery-services-JF3.git"
+    "deploy": "gh-pages -d dist -r https://github.com/jf3deliveryservices/delivery-services-JF3.git"
   },
   "dependencies": {
     "axios": "^1.12.2",
@@ -27,7 +27,7 @@
   "devDependencies": {
     "@eslint/js": "^9.36.0",
     "@types/js-cookie": "^3.0.6",
-    "@types/node": "^24.7.2",
+    "@types/node": "^24.9.1",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.1",
     "@types/react-icons": "^2.2.7",
@@ -44,8 +44,8 @@
     "globals": "^16.4.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.18",
-    "typescript": "~5.9.3",
+    "typescript": "^5.9.3",
     "typescript-eslint": "^8.45.0",
-    "vite": "^7.1.7"
+    "vite": "^7.1.12"
   }
 }
