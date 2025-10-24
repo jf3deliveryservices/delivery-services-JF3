@@ -145,6 +145,7 @@ Referencia: ${referenceNumber}`;
       {isOpen && <div className="fixed inset-0 bg-black opacity-50 z-40" />}
 
       <div
+      translate="no"
         ref={sidebarRef}
         className={`fixed z-50 top-14 right-0 h-[calc(100vh-3.5rem)] w-full sm:w-[380px] border-2 border-t-0 rounded-lg rounded-t-none border-primary text-gray-300 bg-black shadow-lg transition-transform duration-300 ease-in-out transform ${
           isOpen ? "translate-x-0" : "translate-x-full"

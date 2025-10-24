@@ -27,7 +27,7 @@ const ProductDetail = ({
       className="
         relative flex flex-col justify-between items-center
         w-full max-w-[340px] sm:max-w-[360px] md:max-w-[380px]
-        p-5 rounded-3xl bg-black/30 border border-secundary
+        p-4 pt-2 rounded-3xl bg-black/30 border border-secundary
         backdrop-blur-xl overflow-hidden shadow-lg
         hover:shadow-[0_0_20px_rgba(255,255,255,0.1)]
         hover:border-secundary/60
@@ -38,6 +38,9 @@ const ProductDetail = ({
       {/* Resplandor de fondo animado */}
       <div className="absolute inset-0 bg-gradient-to-br from-secundary/20 via-transparent to-fourth/20 opacity-40 blur-2xl pointer-events-none" />
 
+        <div className="flex flex-row  font-bold items-end w-full justify-end mb-4">
+          <Price price={product.price} />
+        </div>
       {/* Imagen del producto */}
       <div className="relative w-full h-48 sm:h-56 md:h-60 lg:h-64 mb-5 rounded-2xl overflow-hidden shadow-md">
         <ImageProduct images={product.images} alt={product.title} />
@@ -49,9 +52,6 @@ const ProductDetail = ({
         <h1 className="text-white text-lg font-semibold tracking-wide">
           {product.title}
         </h1>
-        <div className="flex flex-row items-end w-full justify-center mt-1">
-          <Price price={product.price} />
-        </div>
       </div>
 
       {/* Descripción */}
