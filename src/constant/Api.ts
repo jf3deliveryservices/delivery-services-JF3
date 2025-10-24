@@ -172,7 +172,7 @@ export const getCategoryById = async (id: number): Promise<Category> => {
 };
 
 export const createCategory = async (name: string, aliadoId: number) => {
-  const response = await fetch(`${API_URL}/categories`, {
+  const response = await fetch(`${API_URL}/category`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ name, aliadoId }),
