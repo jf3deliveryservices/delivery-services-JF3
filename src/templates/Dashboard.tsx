@@ -36,7 +36,7 @@ const Dashboard = () => {
     <div className="bg-primary min-h-screen p-4 mt-20">
       {/* 🔍 Input de búsqueda */}
       <div className="flex justify-center mb-6">
-        <InputFilter onSearch={handleSearch} placeholder="esto es un texto" />
+        <InputFilter onSearch={handleSearch} placeholder="Encuentra tu tienda favorita" />
       </div>
 
       {/* 🧱 Grid de aliados */}
