@@ -1,8 +1,11 @@
 import {useState,type FormEvent} from 'react';
 
+type InputFilterProps = {
+  onSearch: (searchTerm: string) => void;
+  placeholder?: string;
+};
 
-
-const InputFilter=({onSearch}: {onSearch: (searchTerm: string) => void;}) => {
+const InputFilter = ({ onSearch, placeholder = "" }: InputFilterProps) => {
     const [searchTerm,setSearchTerm]=useState('');
 
     const handleChange=(event: React.ChangeEvent<HTMLInputElement>) => {
@@ -13,11 +16,11 @@ const InputFilter=({onSearch}: {onSearch: (searchTerm: string) => void;}) => {
 
     return (
         <form action="" onSubmit={(e: FormEvent<HTMLFormElement>): void => e.preventDefault()}>
-            <input className='border-solid border-2 placeholder:text-gray-500 outline-none bg-transparent border-primary rounded-lg  h-10 w-56 text-sm text-gray-200 px-2'
+            <input className='border-solid border-2 placeholder:text-gray-500 outline-none bg-transparent border-secundary rounded-lg  h-10 w-56 text-sm text-gray-200 px-2'
                 type="text"
                 value={searchTerm}
                 onChange={handleChange}
-                placeholder="Buscar en el menu"
+                placeholder={placeholder}
             />
         </form>
     );
