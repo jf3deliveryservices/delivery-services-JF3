@@ -42,7 +42,7 @@ const MenuNavbar = ({ onClick, setActiveView }: MenuNavbarProps) => {
   return (
     <div ref={menuRef} className="z-50">
       {/* Botón de menú móvil */}
-      <div className="block lg:hidden">
+      <div className="block lg:hidden ">
         <button className="w-auto h-auto mb-2" onClick={handleNavbarMenuClick}>
           {isMenuOpen ? (
             <IoMdClose className="w-8 h-8 text-secundary transition-all duration-300" />

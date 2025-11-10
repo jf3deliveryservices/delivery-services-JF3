@@ -18,7 +18,7 @@ const Navbar = ({ setActiveView }: NavbarProps) => {
 
   return (
     <>
-      <div translate="no" className="bg-primary z-40 top-0 fixed lg:px-20 h-14 w-full flex flex-row-reverse justify-between items-center px-4 pt-2 box-shadow text-black text-lg">
+      <div className="bg-black z-50 top-0 fixed lg:px-20 h-14 w-full flex flex-row-reverse justify-between items-center px-4 pt-2 box-shadow text-black text-lg ">
         {/* Sección derecha: logo + icono */}
         <div className="flex flex-row gap-2 mt-[-6px] items-center">
           {/* Icono del carrito (abre/cierra el sidebar) */}

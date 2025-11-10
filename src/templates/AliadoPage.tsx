@@ -83,7 +83,7 @@ const AliadoPage = () => {
       </h2>
 
       {/* 🔍 Filtros */}
-      <div className="flex flex-row md:flex-row items-center justify-center gap-4 mb-6 z-40">
+      <div className="flex flex-row md:flex-row items-center justify-center gap-4 mb-6 z-0">
         <InputFilter onSearch={handleSearch} placeholder="Buscar producto" />
         <FilterCategories onFilter={handleCategoryFilter} aliadoId={aliadoId} />
       </div>
